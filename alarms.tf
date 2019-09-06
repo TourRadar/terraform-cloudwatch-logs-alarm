@@ -11,7 +11,7 @@ resource "aws_cloudwatch_metric_alarm" "alarm" {
   metric_name         = local.metric.name
   namespace           = local.metric.namespace
   period              = var.alarm_period
-  statistic           = local.alarm_statistic
+  statistic           = var.alarm_statistic
   alarm_description   = "Priority: ${each.key}  ${var.alarm_description}"
   treat_missing_data  = var.alarm_treat_missing_data
   alarm_actions       = var.actions
