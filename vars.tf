@@ -34,6 +34,7 @@ variable "filter_metric_name" {
 
 variable "filter_value" {
   type = string
+  default = "1"
 }
 
 
