@@ -17,5 +17,4 @@ resource "aws_cloudwatch_metric_alarm" "alarm" {
   alarm_actions       = var.actions
   ok_actions          = var.ok_actions
   tags                = var.tags
-  dimensions          = local.alarmDimensions
 }
