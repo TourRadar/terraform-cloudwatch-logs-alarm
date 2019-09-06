@@ -92,7 +92,7 @@ variable "alarm_title" {
   type = string
 }
 
-variable "alarm_alarm_description" {
+variable "alarm_description" {
   type    = string
   default = ""
 }
