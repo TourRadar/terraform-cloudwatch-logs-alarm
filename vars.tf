@@ -33,7 +33,7 @@ variable "filter_metric_name" {
 }
 
 variable "filter_value" {
-  type = string
+  type    = string
   default = "1"
 }
 
@@ -67,10 +67,19 @@ variable "alarm_statistic" {
   type    = string
   default = "Sum"
 }
+variable "alarm_period" {
+  type    = number
+  default = 1
+}
 
 variable "alarm_evaluation_periods" {
   type    = number
   default = 1
+}
+
+variable "alarm_treat_missing_data" {
+  type    = string
+  default = "notBreaching"
 }
 
 variable "alarm_comparison_operator" {

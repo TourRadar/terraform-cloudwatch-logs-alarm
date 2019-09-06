@@ -10,10 +10,10 @@ resource "aws_cloudwatch_metric_alarm" "alarm" {
   threshold           = each.value
   metric_name         = local.metric.name
   namespace           = local.metric.namespace
-  period              = var.cpu_utilization_high_evaluation_period
+  period              = var.alarm_period
   statistic           = local.alarm_statistic
   alarm_description   = "Priority: ${each.key}  ${var.alarm_description}"
-  treat_missing_data  = var.cpu_utilization_high_treat_missing_data
+  treat_missing_data  = var.alarm_treat_missing_data
   alarm_actions       = var.actions
   ok_actions          = var.ok_actions
   tags                = var.tags
