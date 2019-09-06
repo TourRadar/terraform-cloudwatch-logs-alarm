@@ -69,7 +69,7 @@ variable "alarm_statistic" {
 }
 variable "alarm_period" {
   type    = number
-  default = 1
+  default = 60
 }
 
 variable "alarm_evaluation_periods" {
