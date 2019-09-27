@@ -40,7 +40,7 @@ variable "filter_value" {
 
 variable "filter_default_value" {
   type    = number
-  default = 1
+  default = 0
 }
 
 
